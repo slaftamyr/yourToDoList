@@ -22,7 +22,7 @@ import{v4 as uid } from "uuid";
 export default function ToDoList() {
    const {tasks, setTasks} = React.useContext(todosContext);
   const [inputTitle, setInputTitle] = useState("");
-  const [state, setState] = useState("");
+  const [state, setState] = useState("all");
   const today = new Date();
   const formattedDate = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
   
